@@ -1,13 +1,21 @@
 <!DOCTYPE html>
 <html>
 <head>
-<script src="bower_components/jquery/dist/jquery.min.js"></script>
 <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.min.css">
+<link rel="stylesheet" href="css/style.css">
+<script src="bower_components/jquery/dist/jquery.min.js"></script>
 <script src="bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
 <script type="text/javascript" src="build/js/app.js"></script>
-<title>JS BUILD TEMPLATE</title>
+<title>Alarm Clock</title>
 </head>
   <body>
-    <h1>Hello World!</h1>
+    <div class="container">
+      <h3>The Current Time Is:</h3>
+      <h2 id="time"></h2>
+      <form class="alarmist">
+        <input id='input-alarm' type="time">
+        <button id='submit-alarm' class='btn' type="submit" name="button">Set Alarm</button>
+      </form>
+    </div>
   </body>
 </html>
